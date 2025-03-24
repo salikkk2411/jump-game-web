@@ -1,0 +1,14 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+canvas {
+    background: lightblue;
+    display: block;
+    margin: auto;
+}
+#scoreDisplay {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
