@@ -1,18 +1,45 @@
-<!DOCTYPE html>
+New one
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Jump Game</title>
-    <link rel="stylesheet" href="style.css">
+    <title>JUMP GAME</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="index.js"></script>
+
 </head>
 <body>
-    <h1>Simple Jump Game</h1>
-    <p id="scoreDisplay">Score: 0</p>
-    <canvas id="gameCanvas" width="800" height="400"></canvas>
-    
-    <script src="index.js">
+    <div class="game-container">
+        <div id="start-screen" class="screen">
+            <h1>JUMP GAME</h1>
+            <p>High Score: <span id="high-score">0</span></p>
+            <button id="start-btn">START GAME</button>
+            <div class="controls">
+                <p>SPACE to Jump | P to Pause</p>
+                <p>Survive as long as possible!</p>
+            </div>
+            <div class="instructions">
+                <p>Avoid the obstacles and set a new high score!</p>
+                <p>The game gets faster as you progress. Jump with perfect timing to survive longer.</p>
+            </div>
+        </div>
         
-    </script>
+        <div id="game-screen" class="screen hidden">
+            <canvas id="gameCanvas" width="800" height="400"></canvas>
+            <div id="score-display">Score: 0</div>
+        </div>
+        
+        <div id="game-over-screen" class="screen hidden">
+            <h1>GAME OVER</h1>
+            <p class="game-over-message">You crashed!</p>
+            <p>Score: <span id="final-score">0</span></p>
+            <p>High Score: <span id="new-high-score">0</span></p>
+            <button id="restart-btn">PLAY AGAIN</button>
+            <div class="controls">
+                <p>Press SPACE to start a new game</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
